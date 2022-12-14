@@ -1,5 +1,7 @@
 # Forkify: Recipe Search App feat. VanillaJS
 
+Recipe search application built with a custom MVC pattern using vanilla JavaScript
+
 # Features
 
 ## 1. Search & display recipes
