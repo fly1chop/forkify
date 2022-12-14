@@ -1,0 +1,8 @@
+# README images
+flowcharts
+
+# dependencies
+node_modules
+dist
+.parcel-cache
+
