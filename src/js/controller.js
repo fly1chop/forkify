@@ -20,14 +20,13 @@ const controlRecipes = async function () {
     // 2) Rendering recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
-    alert(err.message);
     console.error(err);
   }
 };
 
-['hashchange', 'load'].forEach(ev =>
-  window.addEventListener(ev, controlRecipes)
-);
+const init = function () {
+  // implement publisher-subscriber pattern
+  recipeView.addHandlerRender(controlRecipes);
+};
 
-// window.addEventListener('load', showRecipe)
-// window.addEventListener('hashchange', showRecipe)
+init();
